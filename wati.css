@@ -1,0 +1,571 @@
+:root {
+    --primary: rgb(216, 180, 98);
+    --bg: #6b7280 ;
+    --pd1:#424242;
+    --pd2: #2196F3;
+  }
+  
+  * {
+    font-family: "poppins", sans-serif;
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "poppins", sans-serif;
+    background-color: var(--bg);
+  color: rgb(255, 255, 255);
+  }
+  
+  /* navbar start */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--pd1);
+    color: aliceblue;
+    padding: 2.5rem 7%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  
+  /* Pastikan logo benar-benar di tengah */
+  .navbar-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .navbar-logo a {
+    color: aliceblue;
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .navbar .navbar-logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    animation: colorFlash 2s infinite;
+  }
+  
+  @keyframes colorFlash {
+    0%   { color: #ff3c38; }
+    25%  { color: #ff8c42; }
+    50%  { color: #fff275; }
+    75%  { color: #8cff98; }
+    100% { color: #38a1ff; }
+  }
+  
+  
+  
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(img/santriwati/hero.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+  }
+  
+  .hero::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(
+  0deg,
+  rgba(107, 114, 128, 1) 0%,     /* sama dengan bg */
+  rgba(107, 114, 128, 0.6) 30%,
+  rgba(107, 114, 128, 0) 65%
+); /* Efek gradasi bayangan */
+  }
+  
+
+  .profil2 {
+    padding: 10rem 7% 1.4rem;
+  }
+  
+  .profil h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .profil2 h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .profil2 span {
+    color: palevioletred;
+  }
+
+  .profil2 p {
+    text-align: center;
+    font-size: 1.3rem;
+  width: 90%;
+    margin: auto;
+  }
+  .profil2 .p1 {
+    text-align: center;
+    font-size: 1.3rem;
+  width: 90%;
+  margin-top: 1rem;
+  }
+  
+  .profil2 .row2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+  }
+  
+  .profil2 .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .profil2 .row .card,
+  .profil2 .row2 .card{
+    text-align: center;
+    padding-bottom: 4rem;
+    margin-right: 2rem;
+  }
+  
+  .profil2 .row .card img,
+  .profil2 .row2 .card img {
+    border-radius: 20%;
+    width: 80%;
+  }
+  
+  .profil2 .row .card h3,
+  .profil2 .row2 .card h3 {
+    margin: 1 rem auto 0.4rem;
+    font-size: 1.2rem;
+  }
+  
+  .profil2 .row .card p,
+  .profil2 .row2 .card p {
+    font-size: 1rem;
+  }
+  
+  .tambahan {
+    padding: 10rem 7% 1rem;
+    }
+    
+    .tambahan h2 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    
+    .tambahan span {
+        color: goldenrod;
+    }
+    
+    .tambahan .rapat,
+    .tambahan .literasi {
+        display: flex;
+    margin-top: 5rem;
+    }
+    
+    .tambahan .rapat .rapat-img img,
+    .tambahan .literasi .literasi-img img {
+        width: 400px;
+        margin-right: 2rem;
+        border-radius: 5%;
+        text-align: center;
+    }
+    
+    .tambahan .rapat .teks h3,
+    .tambahan .literasi .teks h3 {
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .tambahan .rapat .teks p,
+    .tambahan .literasi .teks p {
+      margin-top: 1rem;
+    font-size: 1.3rem;    
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    background-color:var(--pd1);
+    text-align: center;
+    padding: 1rem 0 5rem;
+    margin-top: 3rem;
+  }
+  
+  footer .social {
+    padding: 1rem;
+  }
+  
+   footer .social a {
+    color: #eee;
+    margin: 1rem;
+     display: inline-flex;
+    align-items: center; /* Vertikal align antara ikon dan teks */
+    gap: 6px; /* Jarak antara ikon dan teks, bisa disesuaikan */
+    text-decoration: none;
+    color: inherit;
+   }
+  
+   footer .social a:hover{
+    color: black;
+   }
+  
+   footer .credit a {
+  color: coral;
+  font-weight: 700;
+  width: 100%;
+   }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   @media (max-width: 1366px) {
+    html {
+      font-size: 75%; /* Menyesuaikan ukuran font */
+    }
+  }
+  
+  /* Tablet */
+  @media (max-width: 768px) {
+    html {
+      font-size: 62%; /* Ukuran font lebih kecil */
+    }
+    .navbar-opsi {
+     
+      position: absolute;
+      top: 100%;
+      right: -100%; /* Sembunyikan dari layar */
+      background-color: rgb(0, 0, 0);
+      width: 20rem;
+      height: 45vh;
+      transition: 0.7s;
+    }
+    
+    .navbar-opsi.active {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--pd1);
+      position: absolute;
+      top: 100%;
+      right: 0;
+    }
+  
+    .navbar .navbar-opsi a {
+      color: cornflowerblue;
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+  
+    .navbar .navbar-opsi a::after {
+      transform-origin: 0 0; /* Animasi garis mulai dari kiri */
+    }
+  
+    .hero .content {
+      margin: 0 auto;
+      padding: 2rem;
+      margin-top: 5rem;
+    }
+  
+    .hero .content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .profil .row,
+    .program .open-program,
+    .inprogram .row,
+    .inprogram .kitab,
+    .inprogram .hafiz,
+    .inprogram .belajar,
+    .inprogram .khitobah,
+    .inprogram .roan,
+    .inprogram .intensif,
+    .yudaftar .dokumen {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profil .row .profil-img img,
+    .program .open-program .program-img img,
+    .inprogram .row .fasilitas-img img,
+    .inprogram .kitab .kitab-img img,
+    .inprogram .hafiz .hafiz-img img,
+    .inprogram .belajar .belajar-img img,
+    .inprogram .khitobah .img-khi img,
+    .inprogram .roan .img-roan img,
+    .inprogram .intensif .img-intensif img,
+    .yudaftar .dokumen .dok-img img,
+    .tambahan .literasi .literasi-img img,
+    .tambahan .rapat .rapat-img img {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  
+    .inprogram .tambahan a {
+      padding: 1rem 3rem;
+      font-size: 1.2rem;
+    }
+  
+  }
+  
+  /* Handphone */
+  @media (max-width: 450px) {
+     
+    #menu {
+      display: inline-block; /* Tampilkan tombol menu */
+    }
+  
+    
+    .navbar-opsi {
+     
+      position: absolute;
+      top: 100%;
+      right: -100%; /* Sembunyikan dari layar */
+      background-color: rgb(0, 0, 0);
+      width: 20rem;
+      height: 45vh;
+      transition: 0.7s;
+    }
+    
+    .navbar-opsi.active {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--pd1);
+      position: absolute;
+      top: 100%;
+      right: 0;
+    }
+  
+    .navbar .navbar-opsi a {
+      color: cornflowerblue;
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+  
+    .navbar .navbar-opsi a::after {
+      transform-origin: 0 0; /* Animasi garis mulai dari kiri */
+    }
+  
+
+  .profil .row .trow {
+    margin-top: -5rem;
+  }
+  
+  .profil h2 {
+    font-size: 2.5rem;
+  }
+  .profil .row  .trow h3 {
+    font-size: 1.3rem;
+  }
+  
+  .profil .row .trow p{
+    font-size: 1.2rem;
+  }
+  
+  /* elemen p umum */
+  .profil .row2 .trow2 p,
+  .profil .row3 .trow3 p,
+  .inprogram .row .trow p,
+  .inprogram .row2 .trow p,
+  .inprogram .kitab .trow p,
+  .inprogram .hafiz .trow p,
+  .inprogram .umum p,
+  .inprogram .belajar .trow p,
+  .inprogram .khitobah .trow p,
+  .inprogram .roan .trow p,
+  .inprogram .intensif .trow p,
+  .inprogram .judul p,
+  .yudaftar .awal p,
+  .yudaftar .dokumen .trow p {
+    font-size: 1.2rem;
+  }
+  
+  .profil2 p,
+  .profil2 .p{
+    font-size: 1.2rem;
+  }
+  
+  .profil2 .row2 .card,
+  .profil2 .row .card {
+    width: 40%;
+  }
+   
+  .profil2 .row2 .card h3,
+  .profil2 .row .card h3{
+  font-size: 0.9rem;
+  }
+  
+  .profil2 .row2 .card p,
+  .profil2 .row .card p{
+    font-size: 0.9rem;
+  }
+  
+  .program .open-program .program-img img {
+    margin-bottom: 0rem;
+  }
+  
+  .program .open-program .tgram h4{
+    margin-top: -20rem;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    .yudaftar .row,
+    .tambahan .rapat,
+    .tambahan .literasi {
+      flex-wrap: wrap;
+    }
+  
+    .yudaftar .row .map {
+      height: 30rem;
+    }
+  
+    .yudaftar .row form {
+      padding-top: 0;
+    }
+  
+  
+    .hero .content {
+      max-width: 100%;
+      padding: 1rem 2rem;
+    }
+  
+    .hero .content h1 {
+      font-size: 2.5rem;
+      margin-top: 30%;
+    }
+  
+    .hero .content p {
+      font-size: 1.3rem;
+    }
+    .yudaftar .row {
+      flex-direction: column;
+    }
+  
+    .yudaftar .row form,
+    .yudaftar .row .map {
+      width: 100%;
+    }
+  
+    .yudaftar .row form {
+      padding: 2rem;
+    }
+    footer {
+      padding: 1rem;
+    }
+    .profil .row .profil-img img {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: block;
+    }
+  }
